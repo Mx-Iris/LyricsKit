@@ -16,12 +16,11 @@ let package = Package(
             targets: ["LyricsCore", "LyricsService"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/cx-org/CXShim", .upToNextMinor(from: "0.4.0")),
-        .package(url: "https://github.com/cx-org/CXExtensions", .upToNextMinor(from: "0.4.0")),
+        .package(url: "https://github.com/MxIris-LyricsX-Project/CXShim", .branchItem("master")),
+        .package(url: "https://github.com/MxIris-LyricsX-Project/CXExtensions", .branchItem("master")),
         .package(url: "https://github.com/ddddxxx/Regex", from: "1.0.1"),
         .package(url: "https://github.com/Mx-Iris/SwiftCF", .branchItem("master")),
         .package(name: "Gzip", url: "https://github.com/1024jp/GzipSwift", from: "5.0.0"),
-//        .package(url: "https://github.com/drmohundro/SWXMLHash", .upToNextMajor(from: "7.0.0")),
     ],
     targets: [
         .target(
